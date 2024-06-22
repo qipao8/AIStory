@@ -1,0 +1,53 @@
+一、提示词
+
+视角+主体+场景+画风+画质
+
+视角
+front view：前视图
+side view：侧视图
+back view：后视图
+Top view：顶视图
+
+主体
+1.人物相关
+性别，服饰，发型，身材，五官，表情，动作
+
+示例1
+正向提示词：
+an old man,robe,fluffy hair,scare,a quill,many papers,looking at window,candlelight,
+反向提示词：
+bad hands,fewer digits,missing arms,long neck,
+
+场景
+1.时间+地点+天气+环境
+
+示例1
+正向提示词：
+night,in the house,dark clouds,fierce wind,
+反向提示词：
+
+画风
+正：best quality, highly detailed,illustration,
+反：lowres,low quality,worst quality,error,
+
+画质
+正：{{masterpiece}},{best quality},{highres},original,body shadow,
+反：
+
+通用反向提示词
+badhandv4,EasyNegative, lowres, bad anatomy, bad hands,error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, jpeg artifacts, signature, watermark, username, blurry
+
+====================================
+
+二、模型实践
+
+AbyssOrangeMix2 + orangemix.vae + bad_prompt_version2
+动漫风格，提示词越少越好，手部细节较差【新增方向提示词(bad_prompt:0.8)】
+
+方向提示词模板：
+nsfw, (worst quality, low quality:1.3), (depth of field, blurry:1.2), (greyscale, monochrome:1.1), 3D face, nose, 
+cropped, lowres, text, jpeg artifacts, signature, watermark, username, blurry, artist name, trademark, watermark, title, 
+(tan, muscular, loli, petite, child, infant, toddlers, chibi, sd character:1.1), multiple view, Reference sheet,
+
+CounterfeitV30_v30
+动漫风格
